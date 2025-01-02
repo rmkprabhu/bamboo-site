@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import CategoryBar from './components/CategoryBar';
 import HeroSection from './components/HeroSection';
@@ -8,7 +8,7 @@ import ProductDetail from './components/ProductDetail';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-gray-50">
         <Header />
         <CategoryBar />
@@ -55,7 +55,7 @@ function App() {
           </div>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
